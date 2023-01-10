@@ -6,7 +6,7 @@ RUN apt-get update
 RUN apt-get-install -y nginx zip curl
 
 #### 
-RUN echo "daemon off;" >>etc/nginx/nginx.conf
+RUN echo "daemon off;" >>/etc/nginx/nginx.conf
 
 #### curl to get the github repo to the master directory
 RUN curl -o /var/www/html/master.zip/ -L https://github.com/gabrielecirulli/2048.git
