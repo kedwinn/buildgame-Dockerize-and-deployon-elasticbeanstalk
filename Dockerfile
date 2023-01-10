@@ -1,5 +1,5 @@
 #### Specifies the base image and 
-FROM ubuntu:22:04
+FROM ubuntu:latest
 
 #### Run executes a series of commands to update and install all nginx, zip and curl
 RUN apt-get update
